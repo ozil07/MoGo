@@ -1,0 +1,42 @@
+@import "_variables.sass"
+
+
+.wps
+	background: #fff url(../img/wps/bg.png) 50% 50% no-repeat
+	background-size: cover
+	.row
+		padding-top: 90px
+
+		div
+			margin-bottom: 120px
+			+max-screen(768px)
+				margin-bottom: 50px
+
+		.wps__photo
+			float: left
+			height: 100%
+			margin-right: 30px
+			margin-bottom: 100px
+
+		h4
+			font: bold 14px $mt
+			text-transform: uppercase
+			margin-bottom: 10px
+
+		span
+			font: italic 300 15px $rb
+			display: block
+
+		hr
+			display: block
+			border: none
+			height: 3px
+			width: 60px
+			background-color: $main-color
+			margin-left: 0
+
+		p
+			font: 16px/1.5 $rb
+			color: #c6c6c6
+			+max-screen(768px)
+				font: 14px/1.5 $rb

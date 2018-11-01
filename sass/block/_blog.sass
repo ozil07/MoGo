@@ -1,0 +1,59 @@
+@import "_variables.sass"
+
+.blog
+	padding-bottom: 100px
+
+	h4
+		font: bold 14px $mt
+		margin-bottom: 10px
+		text-transform: uppercase
+		margin-top: 20px
+		height: 50px
+
+	p
+		font: 15px/1.5 Roboto
+		color: #ccc
+		height: 90px
+
+	span
+		font: italic 300 15px $rb
+		color: #ccc
+
+	hr
+		border: none
+		height: 1px
+		background-color: #c6c6c6
+
+	.blog__photo
+		padding-top: 25%
+		padding-bottom: 25%
+		background-size: cover
+		+max-screen(766px)
+			margin-top: 20px
+
+		img
+			position: relative
+			top: 75px
+			left: -10px
+			+max-screen(1199px)
+				top: 65px
+			+max-screen(991px)
+				top: 45px
+				width: 50px
+			+max-screen(766px)
+				top: 45px
+				width: 50px
+		
+	
+	.blog__photo-one
+		background: #fff url(../img/blog/1.jpg) 50% 50% no-repeat
+		+max-screen(766px)
+			background-size: cover
+	.blog__photo-two
+		background: #fff url(../img/blog/2.jpg) 50% 50% no-repeat
+		+max-screen(766px)
+			background-size: cover
+	.blog__photo-three
+		background: #fff url(../img/blog/3.jpg) 50% 50% no-repeat
+		+max-screen(766px)
+			background-size: cover

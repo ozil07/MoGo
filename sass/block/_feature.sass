@@ -1,0 +1,26 @@
+@import "block/_variables.sass"
+
+
+.feature
+	background: #fff url(../img/5.jpg) 0 0 no-repeat
+	background-size: cover
+	position: relative
+	
+	
+	.feature__tablet
+		display: block
+		margin: 0 auto
+		z-index: 100
+
+	.feature__phone
+		display: block
+		position: absolute
+		top: 455px
+		left: 58.5%
+		+max-screen(1440px)
+			left: 62.4%
+		+max-screen(991px)
+			left: 66.4%
+		+max-screen(768px)
+			display: none
+			

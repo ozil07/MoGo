@@ -1,0 +1,81 @@
+@import "compass/reset"
+@import "block/_media-queries.scss"
+@import "block/_nav.sass"
+@import "block/_header.sass"
+@import "block/_facts.sass"
+@import "block/_service.sass"
+@import "block/_feature.sass"
+@import "block/_service-2.sass"
+@import "block/_quote.sass"
+@import "block/_team.sass"
+@import "block/_logos.sass"
+@import "block/_work.sass"
+@import "block/_testem.sass"
+@import "block/_wps.sass"
+@import "block/_blog.sass"
+@import "block/_map.sass"
+@import "block/_footer.sass"
+@import "block/_variables.sass"
+@import "block/fonts.sass"
+@import "block/_about-us.sass"
+
+.h1
+	font: bold 30px $mt
+	color: #363636
+	text-transform: uppercase
+	margin: 0
+	text-align: center
+
+.h2
+	font: 24px $ks
+	color: #363636
+	padding-top: 85px
+	padding-bottom: 10px
+	text-align: center
+
+.main-font
+	color: #979797
+	text-align: center
+	display: inline-block
+	margin-bottom: 90px
+
+.hrred
+	border: none
+	height: 3px !important
+	background-color: $main_color !important
+	width: 60px
+	margin: 35px auto !important
+
+
+.create
+	display: block
+	text-align: center
+	font: 72px $ks
+	color: #fff
+	padding-top: 150px
+	padding-bottom: 25px
+	+max-screen(991px)
+		font-size: 36px
+	+max-screen(480px)
+		font-size: 30px
+		padding-top: 75px
+
+.welcome
+	display: block
+	color: #fff
+	font: bold 150px/.9em $mt
+	text-align: center
+	text-transform: uppercase
+	+max-screen(991px)
+		font-size: 72px
+	+max-screen(480px)
+		font-size: 44px
+
+
+address
+	font: bold 14px $mt
+	text-align: center
+	padding: 20px
+	margin: 0
+	span
+		color: $main-color

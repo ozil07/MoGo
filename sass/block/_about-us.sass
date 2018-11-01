@@ -1,0 +1,45 @@
+@import "_variables.sass"
+
+.about
+	text-align: center
+	padding-bottom: 100px
+	
+	.about__photo
+		background-size: 100%
+		transition: all .6s
+		padding: 0
+
+		&:hover
+			box-shadow: 10px 10px 0 #98E1D2
+
+		.about__social
+			text-align: center
+			padding-top: 25%
+			padding-bottom: 25%
+			opacity: 0
+			background: #fff linear-gradient($main-color, $banana) 0 0 no-repeat
+			transition: all .6s
+			+max-screen(768px)
+				margin-top: 40px
+				
+			&:hover
+				opacity: .85
+
+	.about__photo-one
+		background: #fff url(../img/2.jpg) 50% 50% no-repeat
+		background-size: 100% 100%
+	.about__photo-two
+		background: #fff url(../img/3.jpg) 50% 50% no-repeat
+		background-size: 100% 100%
+	.about__photo-three
+		background: #fff url(../img/4.jpg) 50% 50% no-repeat
+		background-size: 100% 100%
+		
+	.about__team
+		text-align: center
+		font: bold 14px $mt
+		text-transform: uppercase
+		margin-top: 15px
+		color: #fff
+		letter-spacing: 1px
+	

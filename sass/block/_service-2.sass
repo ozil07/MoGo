@@ -1,0 +1,69 @@
+@import "_variables.sass"
+
+.service2
+	padding-bottom: 100px
+
+
+.service2__list
+	+max-screen(991px)
+		margin-top: 50px
+
+	input
+		display: none
+
+		&:checked + label 
+			color: #98E1D2
+
+			&:after
+				transform: rotateX(0deg)
+
+			+ div
+				height: 200px
+				padding: 15px
+				opacity: 1
+
+	label
+		display: block
+		margin: 5px 20px
+		border-top: 1px solid #ccc
+		border-bottom: 1px solid #ccc
+		padding: 10px 0
+		cursor: pointer
+		perspective: 1000px
+		perspective-origin: 50% 50%
+
+		&:after
+			content: ''
+			display: inline-block
+			width: 22px
+			height: 12px
+			background: #fff url(../img/arrow_to.png) 0 0 no-repeat
+			float: right
+			margin-top: 9px
+			margin-right: 15px
+			transform: rotateX(180deg)
+			transition: transform .5s
+
+		&:nth-child(1)
+			margin-top: 0
+
+		img
+			margin: 0 15px
+			
+		span
+			font: bold 14px $mt
+			text-transform: uppercase
+			
+	.service2__desc
+		height: 0
+		overflow: hidden
+		margin: 0 20px
+		color: #ccc
+		text-align: justify
+		font: italic 300 15px/1.5 $rb
+		box-sizing: border-box
+		transition: height .5s
+		border-bottom: 1px solid #ccc
+		opacity: 0
+
+		

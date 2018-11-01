@@ -1,0 +1,53 @@
+@import "_variables.sass"
+
+.work
+	text-align: center
+	padding-bottom: 100px
+	
+	.row div
+		padding: 0
+
+	.work__photo
+		background-size: 100%
+		transition: all .6s
+		padding: 0
+		+max-screen(768px)
+			background-size: cover !important
+			
+
+
+		.work__social
+			text-align: center
+			padding-top: 35%
+			padding-bottom: 35%
+			opacity: 0
+			background: #fff linear-gradient($main-color, $banana) 0 0 no-repeat
+			transition: all .6s
+				
+			&:hover
+				opacity: .85
+
+	.work__photo-one
+		background: #fff url(../img/works/7.jpg) 50% 50% no-repeat
+	.work__photo-two
+		background: #fff url(../img/works/6.jpg) 50% 50% no-repeat
+	.work__photo-three
+		background: #fff url(../img/works/3.jpg) 50% 50% no-repeat
+	.work__photo-four
+		background: #fff url(../img/works/2.jpg) 50% 50% no-repeat
+	.work__photo-five
+		background: #fff url(../img/works/4.jpg) 50% 50% no-repeat
+	.work__photo-six
+		background: #fff url(../img/works/8.jpg) 50% 50% no-repeat
+	.work__photo-seven
+		background: #fff url(../img/works/Frozen-feature.png) 50% 50% no-repeat
+	.work__photo-eight
+		background: #fff url(../img/works/1.jpg) 50% 50% no-repeat
+		
+	.work__team
+		text-align: center
+		font: 14px $mt
+		text-transform: uppercase
+		margin-top: 15px
+		color: #fff
+		letter-spacing: 1px

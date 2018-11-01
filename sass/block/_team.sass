@@ -1,0 +1,61 @@
+@import "_variables.sass"
+
+.team
+	text-align: center
+	padding-bottom: 100px
+	
+	.team__photo
+		background-size: 100%
+		transition: all .6s
+		padding: 0
+		&:hover
+			box-shadow: 10px 10px 0 #98E1D2
+		
+		.team__social
+			text-align: center
+			padding-top: 50%
+			padding-bottom: 50%
+			opacity: 0
+			background: #fff linear-gradient($main-color, $banana) 0 0 no-repeat
+			transition: all .6s
+
+			&:hover
+				opacity: .85
+
+			ul
+				display: inline-block
+				li
+					float: left
+					a
+						display: block
+						padding: 10px 15px
+						font-size: 26px
+						color: $main-color
+						background-color: $banana
+						transition: all .3s
+						opacity: none
+						&:hover
+							background-color: $main-color
+							color: #fff
+				
+	.team__photo-one
+		background: #fff url(../img/team/3.jpg) 50% 50% no-repeat
+		background-size: cover
+	.team__photo-two
+		background: #fff url(../img/team/2.jpg) 50% 50% no-repeat
+		background-size: cover
+	.team__photo-three
+		background: #fff url(../img/team/1.jpg) 50% 50% no-repeat
+		background-size: cover
+		
+	.team__name
+		text-align: center
+		font: bold 14px $mt
+		text-transform: uppercase
+		margin-top: 25px
+	
+	.team__profession
+		font: italic 300 15px $rb
+		margin-top: 15px
+		margin-bottom: 25px
+		color: #ccc
